@@ -1,40 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ninjas — Greenhouse Gas (GHG) Monitoring & Emissions Visualization Platform
+
+**Ninjas** is a greenhouse gas (GHG) monitoring and data visualization platform built during a hackathon competition. Built with **Next.js**, **deck.gl**, **Three.js**, and **Leaflet**, it turns emissions data into interactive maps, a 3D globe, and rich charts — making climate data easy to explore and understand.
+
+## Features
+
+- **Interactive emissions maps** — geospatial visualization of greenhouse gas data with deck.gl geo-layers, Leaflet, and React Simple Maps
+- **3D globe view** — explore emissions on an interactive Three.js globe (`three-globe`, React Three Fiber)
+- **Data dashboards & charts** — emissions trends and breakdowns rendered with Chart.js, Recharts, and D3.js
+- **CSV data support** — parse and load emissions datasets directly from CSV files with PapaParse
+- **Modern, animated UI** — Framer Motion animations, Tailwind CSS + daisyUI styling, and React Icons
+
+## Tech Stack
+
+- **Framework:** Next.js 14 + React 18
+- **Language:** JavaScript
+- **Mapping & 3D:** deck.gl, Leaflet / React Leaflet, React Map GL, React Simple Maps, Three.js, three-globe
+- **Charts & Data:** Chart.js, Recharts, D3.js, PapaParse, Axios
+- **Styling:** Tailwind CSS + daisyUI
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Other scripts:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint    # run ESLint
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+⭐ If you find this project useful, consider giving it a star — contributions and feedback are welcome!
